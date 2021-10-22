@@ -1,22 +1,46 @@
 <script>
-	export let height = '4rem';
 	export let color = '#000';
-	export let backgroundColor = '#fff';
+	export let accentColor = '#fff';
+	export let navButtons = [{ href: '#about', innerHtml: 'About' }];
 </script>
 
-<nav style={`height: ${height}; color: ${color}; background-color: ${backgroundColor}`}>
+<nav style={`color: ${color};`}>
 	<ul>
-		<li><a href="#about">About</a></li>
+		{#each navButtons as navButton}
+			<li><a href={navButton.href}>{navButton.innerHtml}</a></li>
+		{/each}
 	</ul>
 </nav>
 
 <style>
 	nav {
-		position: fixed;
-		top: 0;
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
 		width: 100%;
+		height: 100%;
+	}
+
+	ul {
+		display: flex;
+		height: 100%;
+		font-size: 1.5rem;
+	}
+
+	li {
+		height: 100%;
+	}
+
+	a {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		padding: 0px 1.5rem 0px 1.5rem;
+	}
+
+	a:hover {
+		padding-top: 4px;
+		border-bottom: 4px #fff solid;
 	}
 </style>
