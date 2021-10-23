@@ -2,6 +2,7 @@
 	export let title = 'title';
 	export let link = '';
 	export let github = '';
+	export let screenshot = '';
 
 	const clickHandler = () => {
 		window.open(link, '_blank');
@@ -28,7 +29,9 @@
 			</svg></a
 		>
 	</div>
-	<div class="screenshot" />
+	<div class="screenshot">
+		<img src={screenshot} alt="screenshot" />
+	</div>
 </div>
 
 <style>
@@ -36,6 +39,13 @@
 		width: 24px;
 		height: 24px;
 	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
 	.tile {
 		background-color: #444;
 		border: solid black 4px;
@@ -54,8 +64,12 @@
 	}
 
 	#github-link {
+		box-sizing: content-box;
 		position: absolute;
 		right: 1rem;
+		padding: 0.25rem;
+		background-color: #333;
+		border-radius: 100%;
 	}
 
 	.screenshot {

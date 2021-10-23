@@ -6,17 +6,20 @@
 		{
 			title: 'Stox',
 			link: 'https://zen-sammet-07e1df.netlify.app/',
-			github: 'https://github.com/clarence-adams/stox'
+			github: 'https://github.com/clarence-adams/stox',
+			screenshot: '/stox.png'
 		},
 		{
 			title: 'Slone HVAC',
 			link: 'https://sloneheatingandair.com/',
-			github: 'https://github.com/clarence-adams/slone-heating-and-air'
+			github: 'https://github.com/clarence-adams/slone-heating-and-air',
+			screenshot: '/slone.png'
 		},
 		{
 			title: 'Calculator',
 			link: 'https://flamboyant-kalam-8ca516.netlify.app/',
-			github: 'https://github.com/clarence-adams/fcc-calculator'
+			github: 'https://github.com/clarence-adams/fcc-calculator',
+			screenshot: '/calculator.png'
 		}
 	];
 </script>
@@ -38,7 +41,12 @@
 
 <section id="projects">
 	{#each projects as project}
-		<Project title={project.title} link={project.link} github={project.github} />
+		<Project
+			title={project.title}
+			link={project.link}
+			github={project.github}
+			screenshot={project.screenshot}
+		/>
 	{/each}
 </section>
 
@@ -92,6 +100,7 @@
 
 	section {
 		scroll-margin-top: 4rem;
+		color: #fff;
 	}
 
 	h1 {
