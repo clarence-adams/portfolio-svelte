@@ -5,7 +5,7 @@
 
 <header>
 	<Nav
-		color={'#fff'}
+		accentColor={'#ff3e00'}
 		navButtons={[
 			{ href: '#about', innerHtml: 'About' },
 			{ href: '#projects', innerHtml: 'Projects' },
@@ -26,7 +26,7 @@
 		position: fixed;
 		width: 100%;
 		height: 4rem;
-		background-color: #333;
+		background-color: #fff;
 		z-index: 1;
 		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
 	}
@@ -41,9 +41,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 4rem;
 		font-size: 1.25rem;
-		background-color: #333;
-		color: white;
+		background-color: #fff;
+		border-top: 1px solid #ccc;
 	}
 </style>

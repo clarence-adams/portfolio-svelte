@@ -3,6 +3,11 @@
 	export let link = '';
 	export let github = '';
 	export let screenshot = '';
+	export let headerColor = '#fff';
+
+	const mouseEnterHandler = (event) => {
+		event.target.classList.add('orange');
+	};
 
 	const clickHandler = () => {
 		window.open(link, '_blank');
@@ -11,20 +16,16 @@
 
 <div class="tile" on:click={clickHandler}>
 	<div class="header">
-		<h3>{title}</h3>
-		<a href={github} target="_blank" id="github-link"
-			><svg
+		<h3 style={`color: ${headerColor}`}>{title}</h3>
+		<a href={github} target="_blank" id="github-link" on:mousehover:focus={mouseEnterHandler}>
+			<svg
 				xmlns="http://www.w3.org/2000/svg"
-				class="h-6 w-6"
-				fill="none"
-				viewBox="0 0 24 24"
-				stroke="currentColor"
+				fill="currentColor"
+				class="bi bi-code-slash"
+				viewBox="0 0 16 16"
 			>
 				<path
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					stroke-width="2"
-					d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+					d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
 				/>
 			</svg></a
 		>
@@ -46,6 +47,10 @@
 		object-fit: cover;
 	}
 
+	.orange {
+		color: orange;
+	}
+
 	.tile {
 		background-color: #444;
 		border: solid black 4px;
@@ -59,16 +64,20 @@
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		height: 3rem;
-		font-size: 1.5rem;
+		height: 4rem;
+		background-color: #fff;
+		font-size: 1.75rem;
+		font-weight: 600;
 	}
 
 	#github-link {
 		box-sizing: content-box;
 		position: absolute;
 		right: 1rem;
-		padding: 0.25rem;
-		background-color: #333;
+		padding: 0.5rem;
+		height: 1.5rem;
+		width: 1.5rem;
+		background-color: #ccc;
 		border-radius: 100%;
 	}
 

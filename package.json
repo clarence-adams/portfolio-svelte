@@ -18,5 +18,9 @@
     "prettier-plugin-svelte": "^2.4.0",
     "svelte": "^3.42.6"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "nodemailer": "^6.7.0"
+  }
 }
