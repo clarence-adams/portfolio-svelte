@@ -14,7 +14,7 @@
 	};
 </script>
 
-<div class="tile" on:click={clickHandler}>
+<div class="tile">
 	<div class="header">
 		<h3 style={`color: ${headerColor}`}>{title}</h3>
 		<a href={github} target="_blank" id="github-link" on:mousehover:focus={mouseEnterHandler}>
@@ -30,7 +30,7 @@
 			</svg></a
 		>
 	</div>
-	<div class="screenshot">
+	<div class="screenshot" on:click={clickHandler}>
 		<img src={screenshot} alt="screenshot" />
 	</div>
 </div>

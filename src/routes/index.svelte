@@ -68,25 +68,41 @@
 </section>
 
 <style>
-	@media screen and (max-width: 900px) {
-		#profile {
-			width: 50% !important;
-		}
-
+	@media screen and (max-width: 1100px) {
 		#projects {
 			min-height: var(--mobile-screen-height) !important;
 			scroll-margin-top: 3rem !important;
 			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
 		}
+	}
 
+	@media screen and (min-width: 1000px) {
 		#contact {
-			padding: 4rem !important;
+			padding: 4rem 33% 4rem 33% !important;
+		}
+	}
+
+	@media screen and (max-width: 800px) {
+		#profile {
+			width: 50% !important;
+		}
+	}
+
+	@media screen and (max-width: 650px) {
+		#contact {
+			padding: 4rem 10% 4rem 10% !important;
 		}
 	}
 
 	@media screen and (max-width: 500px) {
+		#profile {
+			width: 50% !important;
+		}
+	}
+
+	@media screen and (max-width: 400px) {
 		#contact {
-			padding: 2rem !important;
+			padding: 4rem 3% 4rem 3% !important;
 		}
 	}
 
@@ -140,7 +156,7 @@
 
 	#contact {
 		background-color: #fff;
-		padding: 4rem 24rem 4rem 24rem;
+		padding: 4rem 25% 4rem 25%;
 	}
 
 	section {

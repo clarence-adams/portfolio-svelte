@@ -37,13 +37,52 @@
 	<h4>Contact</h4>
 
 	<fieldset {disabled}>
-		<label for="name">Name</label>
+		<label for="name"
+			>Name<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="orange"
+				width="0.75rem"
+				height="0.75rem"
+				fill="currentColor"
+				viewBox="0 0 16 16"
+			>
+				<path
+					d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z"
+				/>
+			</svg></label
+		>
 		<input id="name" bind:value={name} />
 
-		<label for="email">Email</label>
+		<label for="email"
+			>Email<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="orange"
+				width="0.75rem"
+				height="0.75rem"
+				fill="currentColor"
+				viewBox="0 0 16 16"
+			>
+				<path
+					d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z"
+				/>
+			</svg></label
+		>
 		<input id="email" bind:value={email} />
 
-		<label for="message">Message</label>
+		<label for="message"
+			>Message<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="orange"
+				width="0.75rem"
+				height="0.75rem"
+				fill="currentColor"
+				viewBox="0 0 16 16"
+			>
+				<path
+					d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z"
+				/>
+			</svg></label
+		>
 		<textarea id="message" bind:value={message} />
 	</fieldset>
 
@@ -92,6 +131,10 @@
 		border: 4px #ff3e00 solid;
 	}
 
+	.orange {
+		color: #ff3e00;
+	}
+
 	form {
 		display: flex;
 		flex-direction: column;
@@ -109,6 +152,10 @@
 	}
 
 	label {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0.25rem;
 		font-size: 1.125rem;
 		font-weight: 600;
 	}

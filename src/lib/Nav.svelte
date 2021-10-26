@@ -57,6 +57,21 @@
 </nav>
 
 <style>
+	@media screen and (max-width: 550px) {
+		a {
+			padding: 0 0.75rem 0 0.75rem !important;
+		}
+	}
+
+	@media screen and (max-width: 430px) {
+		ul {
+			font-size: 1.25rem !important;
+		}
+
+		a {
+			padding: 0 0.5rem 0 0.5rem !important;
+		}
+	}
 	.hidden {
 		display: none;
 	}
