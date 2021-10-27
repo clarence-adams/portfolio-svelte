@@ -101,6 +101,9 @@
 	}
 
 	@media screen and (max-width: 400px) {
+		#about {
+			background-image: url('/about-background-mobile.svg') !important;
+		}
 		#contact {
 			padding: 4rem 3% 4rem 3% !important;
 		}
