@@ -118,21 +118,17 @@
 
 	.form-alert {
 		background-color: #b2e0ff;
-		border: 4px #40b3ff solid;
+		border: 4px var(--blue) solid;
 	}
 
 	.form-alert-success {
 		background-color: #d2f3d6;
-		border: 4px #90e39a solid;
+		border: 4px var(--green) solid;
 	}
 
 	.form-alert-error {
 		background-color: #ffb199;
-		border: 4px #ff3e00 solid;
-	}
-
-	.orange {
-		color: #ff3e00;
+		border: 4px var(--orange) solid;
 	}
 
 	form {
@@ -140,7 +136,7 @@
 		flex-direction: column;
 		padding: 0 4rem 0 4rem;
 		color: #fff;
-		background-color: #676778;
+		background-color: var(--grey);
 		border-radius: 1rem;
 	}
 
@@ -195,7 +191,7 @@
 		align-self: center;
 		padding: 0.5rem 0.75rem 0.5rem 0.75rem;
 		margin-bottom: 2rem;
-		background-color: #ff3e00;
+		background-color: var(--orange);
 		border-radius: 0.75rem;
 		font-size: 1.125rem;
 		font-weight: 600;

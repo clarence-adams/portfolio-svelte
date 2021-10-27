@@ -106,18 +106,6 @@
 		}
 	}
 
-	.orange {
-		color: #ff3e00;
-	}
-
-	.blue {
-		color: #40b3ff;
-	}
-
-	.grey {
-		color: #676778;
-	}
-
 	.about-icon {
 		width: 2.5rem;
 		height: 2.5rem;
@@ -131,6 +119,9 @@
 		padding: 2rem 2rem 0 2rem;
 		min-height: calc(100vh - 4rem);
 		text-align: center;
+		background-image: url('/about-background.svg');
+		background-size: cover;
+		background-position: center;
 	}
 
 	#about > p {
@@ -148,7 +139,7 @@
 		display: grid;
 		gap: 3rem;
 		grid-template-columns: repeat(3, 1fr);
-		background-color: #676778;
+		background-color: var(--grey);
 		min-height: var(--screen-height);
 		scroll-margin-top: 4rem;
 		padding: 3rem;

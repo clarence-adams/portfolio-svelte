@@ -47,10 +47,6 @@
 		object-fit: cover;
 	}
 
-	.orange {
-		color: orange;
-	}
-
 	.tile {
 		background-color: #444;
 		border: solid black 4px;

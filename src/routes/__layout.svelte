@@ -21,7 +21,34 @@
 </footer>
 
 <style>
-	@import '../styles/globals.css';
+	/* Preflight */
+
+	@import '../styles/preflight.css';
+
+	/* Global Variables */
+
+	:global(body) {
+		--grey: #676778;
+		--orange: #ff3e00;
+		--green: #90e39a;
+		--blue: #40b3ff;
+	}
+
+	/* Global Classes */
+
+	:global(.grey) {
+		color: var(--grey);
+	}
+	:global(.orange) {
+		color: var(--orange);
+	}
+	:global(.green) {
+		color: var(--green);
+	}
+	:global(.blue) {
+		color: var(--blue);
+	}
+
 	header {
 		position: fixed;
 		width: 100%;
