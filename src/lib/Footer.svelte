@@ -1,4 +1,11 @@
-<p>Coded by Clarence using Svelte</p>
+<p>
+	Coded by Clarence using <a
+		href="https://svelte.dev/"
+		target="_blank"
+		rel="noreferrer"
+		class="orange">Svelte</a
+	>
+</p>
 
 <style>
 	p {

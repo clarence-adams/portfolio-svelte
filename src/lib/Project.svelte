@@ -4,20 +4,12 @@
 	export let github = '';
 	export let screenshot = '';
 	export let headerColor = '#fff';
-
-	const mouseEnterHandler = (event) => {
-		event.target.classList.add('orange');
-	};
-
-	const clickHandler = () => {
-		window.open(link, '_blank');
-	};
 </script>
 
 <div class="tile">
 	<div class="header">
 		<h3 style={`color: ${headerColor}`}>{title}</h3>
-		<a href={github} target="_blank" id="github-link" on:mousehover:focus={mouseEnterHandler}>
+		<a href={github} target="_blank" rel="noreferrer" class="github-link">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				fill="currentColor"
@@ -30,8 +22,10 @@
 			</svg></a
 		>
 	</div>
-	<div class="screenshot" on:click={clickHandler}>
-		<img src={screenshot} alt="screenshot" />
+	<div class="screenshot">
+		<a href={link} target="_blank" rel="noreferr"
+			><img src={screenshot} alt={`Screenshot of ${title} website.`} /></a
+		>
 	</div>
 </div>
 
@@ -66,7 +60,7 @@
 		font-weight: 600;
 	}
 
-	#github-link {
+	.github-link {
 		box-sizing: content-box;
 		position: absolute;
 		right: 1rem;
@@ -75,6 +69,10 @@
 		width: 1.5rem;
 		background-color: #ccc;
 		border-radius: 100%;
+	}
+
+	.github-link:hover {
+		background-color: var(--orange);
 	}
 
 	.screenshot {
