@@ -34,7 +34,7 @@
 </script>
 
 <form>
-	<h4>Contact</h4>
+	<h3>Contact</h3>
 
 	<fieldset {disabled}>
 		<label for="name"
@@ -161,7 +161,7 @@
 		width: 100%;
 	}
 
-	h4 {
+	h3 {
 		align-self: center;
 		margin: 2rem 0 2rem 0;
 		font-size: 3rem;

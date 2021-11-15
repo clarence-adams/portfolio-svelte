@@ -8,23 +8,26 @@
 
 <div class="tile">
 	<div class="header">
-		<h3 style={`color: ${headerColor}`}>{title}</h3>
+		<h2 style={`color: ${headerColor}`}>{title}</h2>
 		<a href={github} target="_blank" rel="noreferrer" class="github-link">
 			<svg
+				class="w-6 h-6"
+				fill="none"
+				stroke="currentColor"
+				viewBox="0 0 24 24"
 				xmlns="http://www.w3.org/2000/svg"
-				fill="currentColor"
-				class="bi bi-code-slash"
-				viewBox="0 0 16 16"
-			>
-				<path
-					d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
+				><path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+					d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
 				/>
-			</svg></a
-		>
+			</svg>
+		</a>
 	</div>
 	<div class="screenshot">
-		<a href={link} target="_blank" rel="noreferr"
-			><img src={screenshot} alt={`Screenshot of ${title} website.`} /></a
+		<a href={link} target="_blank" rel="noreferr">
+			<img src={screenshot} alt={`Screenshot of ${title} website.`} /></a
 		>
 	</div>
 </div>
@@ -72,7 +75,7 @@
 	}
 
 	.github-link:hover {
-		background-color: var(--orange);
+		background-color: var(--blue);
 	}
 
 	.screenshot {
